@@ -34,28 +34,36 @@
           <div class = "slideBg"></div>
           <h1 class = "sliderTitle">Wilson</br>Clash</h1>
           <h2 class = "sliderPrice">$199</h2>
-          <button class = "buyButton" type="button">BUY NOW!</button>
+          <a href = "#product">
+              <button class = "buyButton" type="button">BUY NOW!</button>
+          </a>
         </div>
         <div class = "sliderItem">
           <img src = "./img/blade.png" alt="" class="sliderImg">
           <div class = "slideBg"></div>
           <h1 class = "sliderTitle">Wilson</br>Blade</h1>
-          <h2 class = "sliderPrice">$199</h2>
-          <button class = "buyButton" type="button">BUY NOW!</button>
-        </div>
-        <div class = "sliderItem">
-          <img src = "./img/ultra.png" alt="" class="sliderImg">
-          <div class = "slideBg"></div>
-          <h1 class = "sliderTitle">Wilson</br>Pro</h1>
-          <h2 class = "sliderPrice">$199</h2>
-          <button class = "buyButton" type="button">BUY NOW!</button>
+          <h2 class = "sliderPrice">$249</h2>
+          <a href = "#product">
+              <button class = "buyButton" type="button">BUY NOW!</button>
+          </a>
         </div>
         <div class = "sliderItem">
           <img src = "./img/proStaff.png" alt="" class="sliderImg">
           <div class = "slideBg"></div>
+          <h1 class = "sliderTitle">Wilson</br>Pro</h1>
+          <h2 class = "sliderPrice">$273</h2>
+          <a href = "#product">
+              <button class = "buyButton" type="button">BUY NOW!</button>
+          </a>
+        </div>
+        <div class = "sliderItem">
+          <img src = "./img/ultra.png" alt="" class="sliderImg">
+          <div class = "slideBg"></div>
           <h1 class = "sliderTitle">Wilson</br>Ultra</h1>
-          <h2 class = "sliderPrice">$199</h2>
-          <button class = "buyButton" type="button">BUY NOW!</button>
+          <h2 class = "sliderPrice">$179</h2>
+          <a href = "#product">
+              <button class = "buyButton" type="button">BUY NOW!</button>
+          </a>
         </div>
       </div>
     </div>
@@ -81,8 +89,47 @@
             <span class = "featureDesc">Keep in touch via email and support system.</span>
         </div>
     </div>
-    <script src="./app.js">
-
-    </script>
+    <div class="product" id = "product">
+        <img src= "./img/clash.png"  id = "clash" alt="" class = "productImg">
+        <div class="productDetails">
+            <h1 class = "productTitle">Wilson Clash</h1>
+            <h2 class = "productPrice">$199</h2>
+            <p class = "productDesc">More power, more control, better handling for all player types.</p>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">4-1/8"</div>
+                <div class="size">4-1/4"</div>
+                <div class="size">4-3/8"</div>
+            </div>
+            <button class="productButton">BUY NOW!</button>
+        </div>
+        <div class="payment">
+            <h1 class = payTitle>Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type = "text" placeholder = "John Doe" class = "payInput">
+            <label>Phone Number</label>
+            <input type = "text" placeholder = "+1-234-5678" class = "payInput">
+            <label>Address</label>
+            <input type = "text" placeholder = "Elton St 21 22-145" class = "payInput">
+            <h1 class = "payTitle">Card Information</h1>
+            <div class="carIcons">
+                <img src="./img/visa.png" width = "40" alt="" class = "cardIcon">
+                <img src="./img/master.png" alt = "" width = "40" class = "cardIcon">
+            </div>
+            <input type = "password" class = "payInput" placeholder = "card Number">
+            <div class="cardInfo">
+                <input type = "text" placeholder = "mm" class = "payInput sm">
+                <input type = "text" placeholder = "yyyy" class = "payInput sm">
+                <input type = "text" placeholder = "cvv" class = "payInput sm">
+            </div>
+            <button class = "payButton">Checkout!</button>
+            <span class = "close">X</span>
+        </div>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
